@@ -9,11 +9,13 @@ import {
  import EditEventPage from "./pages/EditEventPage.js"
  import RootLayout from "./pages/RootLayout.js";
  import EventsRootLayout from "./pages/EventsRootLayout.js";
+import ErrorPage from "./pages/ErrorPage.js";
 
 const router = createBrowserRouter([
       {
         path: '/',
         element: <RootLayout />,
+        errorElement: <ErrorPage />,
         children: [
           { index: true, element: <HomePage />},
           { 

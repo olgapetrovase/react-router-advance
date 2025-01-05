@@ -53,15 +53,15 @@ const router = createBrowserRouter([
                     action: manipulateEventAction
                   },
                 ]
-              }, 
-              {
-                path: 'newsletter',
-                element: <NewsletterPage />,
-                action: newsletterAction,
-              },              
-            ]
-          },          
-        ]
+              },                           
+            ],
+          },  
+          {
+            path: 'newsletter',
+            element: <NewsletterPage />,
+            action: newsletterAction,
+          },        
+        ],         
       }      
 ]);
 
